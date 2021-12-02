@@ -1,3 +1,9 @@
+sdformat12 (12.3.0-1~buster) buster; urgency=medium
+
+  * sdformat12 12.3.0-1 release
+
+ -- Nate Koenig <nate@openrobotics.org>  Wed, 01 Dec 2021 15:30:21 -0700
+
 sdformat12 (12.2.0-1~buster) buster; urgency=medium
 
   * sdformat12 12.2.0-1 release
