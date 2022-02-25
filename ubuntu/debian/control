@@ -93,7 +93,7 @@ Description: Simulation Description Format (SDF) parser - SDF files
 Package: libsdformat12-dbg
 Architecture: any
 Section: debug
-Priority: extra
+Priority: optional
 Depends:
      libsdformat12 (= ${binary:Version}),
      ${misc:Depends}
