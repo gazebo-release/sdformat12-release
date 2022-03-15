@@ -1,11 +1,11 @@
 Source: sdformat12
+Standards-Version: 3.9.5
 Maintainer: Jose Luis Rivero <jrivero@osrfoundation.org>
 Section: science
 Priority: optional
 Build-Depends: cmake,
                debhelper (>= 11),
-               doxygen,
-               python,
+               python3,
                libtinyxml2-dev,
                doxygen,
                texlive-base,
@@ -15,9 +15,8 @@ Build-Depends: cmake,
                libignition-tools-dev,
                libignition-math6-dev,
                libignition-utils1-dev
-Vcs-Browser: https://github.com/ignitionrobotics/sdformat
+Vcs-Browser: https://github.com/ignition-release/sdformat12-release
 Vcs-Git: https://github.com/ignition-release/sdformat12-release
-Standards-Version: 4.5.1
 Homepage: http://sdformat.org
 
 Package: libsdformat12
@@ -28,14 +27,10 @@ Depends:  sdformat12-sdf (>= ${source:Version}),
           ${shlibs:Depends},
           ${misc:Depends}
 Multi-Arch: same
-Breaks: libsdformat2,
-        libsdformat3,
-        libsdformat4,
-        libsdformat5
-Replaces: libsdformat2,
-          libsdformat3,
-          libsdformat4,
-          libsdformat5
+Breaks: libsdformat6,
+        libsdformat12-12
+Replaces: libsdformat6,
+          libsdformat12-12
 Description: Simulation Description Format (SDF) parser - Shared library
  SDF is an XML file format that describes environments, objects, and robots
  in a manner suitable for robotic applications. SDF is capable of representing
@@ -44,6 +39,8 @@ Description: Simulation Description Format (SDF) parser - Shared library
  The format of SDF is also described by XML, which facilitates updates and
  allows conversion from previous versions. A parser is also contained within
  this package that reads SDF files and returns a C++ interface.
+ .
+ This package gathers the shared library
 
 Package: libsdformat12-dev
 Architecture: any
@@ -54,14 +51,10 @@ Depends: libtinyxml2-dev,
          libignition-utils1-dev,
          libsdformat12 (= ${binary:Version}),
          ${misc:Depends}
-Breaks: libsdformat2-dev,
-        libsdformat3-dev,
-        libsdformat4-dev,
-        libsdformat5-dev
-Replaces: libsdformat2-dev,
-        libsdformat3-dev,
-        libsdformat4-dev,
-        libsdformat5-dev
+Breaks: libsdformat6-dev,
+        libsdformat-dev (<= 12.3.0+ds-2~)
+Replaces: libsdformat6-dev,
+          libsdformat-dev (<= 12.3.0+ds-2~)
 Multi-Arch: same
 Description: Simulation Description Format (SDF) parser - Development files
  SDF is an XML file format that describes environments, objects, and robots
@@ -76,8 +69,11 @@ Package: sdformat12-sdf
 Architecture: all
 Section: libdevel
 Depends: ${misc:Depends}
+Breaks: sdformat6-sdf,
+        sdformat-sdf (<= 12.3.0+ds-2~)
+Replaces: sdformat6-sdf,
+          sdformat-sdf (<= 12.3.0+ds-2~)
 Multi-Arch: foreign
-Conflicts: libsdformat1
 Description: Simulation Description Format (SDF) parser - SDF files
  SDF is an XML file format that describes environments, objects, and robots
  in a manner suitable for robotic applications. SDF is capable of representing
@@ -93,7 +89,7 @@ Description: Simulation Description Format (SDF) parser - SDF files
 Package: libsdformat12-dbg
 Architecture: any
 Section: debug
-Priority: optional
+Priority: extra
 Depends:
      libsdformat12 (= ${binary:Version}),
      ${misc:Depends}
@@ -106,11 +102,17 @@ Description: Simulation Description Format (SDF) parser - Debugging symbols
  The format of SDF is also described by XML, which facilitates updates and
  allows conversion from previous versions. A parser is also contained within
  this package that reads SDF files and returns a C++ interface.
+ .
+ This package contains debug symbols
 
 Package: sdformat12-doc
 Architecture: all
 Section: doc
 Depends: ${misc:Depends}, libjs-jquery
+Breaks: sdformat6-doc,
+        sdformat-doc (<= 12.3.0+ds-2~)
+Replaces: sdformat6-sdf,
+          sdformat-doc (<= 12.3.0+ds-2~)
 Multi-Arch: foreign
 Description: Simulation Description Format (SDF) parser - Documentation
  SDF is an XML file format that describes environments, objects, and robots

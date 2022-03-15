@@ -1,0 +1,11 @@
+sdformat12 (12.3.0+osrf-1~jammy) jammy; urgency=medium
+
+  * sdformat12 12.3.0+osrf-1 release
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 25 Feb 2022 18:00:18 +0100
+
+sdformat12 (12.3.0-1~jammy) jammy; urgency=medium
+
+  * First release for jammy
+
+ -- Jose Luis Rivero <jrivero@osrfoundation.org>  Fri, 25 Feb 2022 17:19:26 +0100
