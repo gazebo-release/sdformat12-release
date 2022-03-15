@@ -2,6 +2,12 @@ sdformat12 (12.4.0~pre1-1~bionic) bionic; urgency=medium
 
   * sdformat12 12.4.0~pre1-1 release
 
+ -- William Lew <williamlew@openrobotics.org>  Tue, 15 Mar 2022 18:22:03 +0000
+
+sdformat12 (12.4.0~pre1-1~bionic) bionic; urgency=medium
+
+  * sdformat12 12.4.0~pre1-1 release
+
  -- William Lew <williamlew@openrobotics.org>  Tue, 15 Mar 2022 18:07:35 +0000
 
 sdformat12 (12.3.0-1~bionic) bionic; urgency=medium
