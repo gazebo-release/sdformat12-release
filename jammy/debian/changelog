@@ -1,3 +1,9 @@
+sdformat12 (12.6.0-1~jammy) jammy; urgency=medium
+
+  * sdformat12 12.6.0-1 release
+
+ -- Nate Koenig <nate@openrobotics.org>  Tue, 27 Sep 2022 04:39:40 -0700
+
 sdformat12 (12.6.0~pre1-1~jammy) jammy; urgency=medium
 
   * sdformat12 12.6.0~pre1-1 release
