@@ -1,3 +1,9 @@
+sdformat12 (12.6.0-2~buster) buster; urgency=medium
+
+  * sdformat12 12.6.0-2 release
+
+ -- Steve Peters <scpeters@openrobotics.org>  Fri, 30 Sep 2022 13:52:08 -0700
+
 sdformat12 (12.6.0-1~buster) buster; urgency=medium
 
   * sdformat12 12.6.0-1 release

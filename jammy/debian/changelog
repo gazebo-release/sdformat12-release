@@ -1,3 +1,9 @@
+sdformat12 (12.6.0-2~jammy) jammy; urgency=medium
+
+  * sdformat12 12.6.0-2 release
+
+ -- Steve Peters <scpeters@openrobotics.org>  Fri, 30 Sep 2022 13:52:09 -0700
+
 sdformat12 (12.6.0-1~jammy) jammy; urgency=medium
 
   * sdformat12 12.6.0-1 release
