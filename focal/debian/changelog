@@ -1,3 +1,9 @@
+sdformat12 (12.7.0~pre1-1~focal) focal; urgency=medium
+
+  * sdformat12 12.7.0~pre1-1 release
+
+ -- Nate Koenig <nate@openrobotics.org>  Fri, 03 Feb 2023 14:52:12 -0800
+
 sdformat12 (12.6.0-2~focal) focal; urgency=medium
 
   * sdformat12 12.6.0-2 release
